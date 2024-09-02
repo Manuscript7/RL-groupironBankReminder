@@ -8,12 +8,12 @@ import net.runelite.client.config.ConfigItem;
 public interface ExampleConfig extends Config
 {
 	@ConfigItem(
-		keyName = "greeting",
-		name = "Welcome Greeting",
-		description = "The message to show to the user when they login"
+		keyName = "ItemsToCheck",
+		name = "Items to remind when in bank/inventory",
+		description = "Comma-separated list of items that you want to be reminded of when in inventory/bank whilst logging off"
 	)
-	default String greeting()
+	default String itemsToCheck()
 	{
-		return "Hello";
+		return "Dragon Warhammer,Blowpipe";
 	}
 }
